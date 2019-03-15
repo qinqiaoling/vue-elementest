@@ -1,0 +1,110 @@
+.content{background: #fff;}
+.content .carousel_wrap {position: relative;width: 100%;}
+.content .Redemption {position: relative;}
+.navbarTopMain {width: 1200px;margin: 0 auto;position: relative;}
+.content .Redemption .Redemption_nav {padding: 25px 0 0 0;margin-bottom: 0;}
+.content .Redemption .Redemption_nav li {width: 25%;float: left;text-align: center;}
+.content .Redemption .Redemption_nav li a {display: inline-block;width: 280px;height: 120px;
+    /*background: url(../images/rn1.png) no-repeat 50% 50%;background-size: 100% 100%;*/}
+.content .Redemption .Redemption_nav li:nth-child(1) a .Redemption_font {color: #CD050C;text-align: center;}
+/*.content .Redemption .Redemption_nav li:nth-child(2) a {background: url(../images/rn2.png) no-repeat 50% 50%;
+    background-size: 100% 100%;}
+.content .Redemption .Redemption_nav li:nth-child(3) a {background: url(../images/rn3.png) no-repeat 50% 50%;
+    background-size: 100% 100%;}
+.content .Redemption .Redemption_nav li:nth-child(4) a {background: url(../images/rn4.png) no-repeat 50% 50%;
+    background-size: 100% 100%;}*/
+.content .Redemption .Redemption_nav li a .Redemption_font {
+    display: -webkit-box;display: -moz-box;display: -webkit-flex;display: -moz-flex;display: -ms-flexbox;display: flex;
+    align-items: center;justify-content: center;height: 100%;font-size: 18px;color: #fff;}
+.content .Redemption .Redemption_nav li a .Redemption_font p {margin-bottom: 0;}
+.content .Redemption .Redemption_nav li a .Redemption_font p i {font-size: 22px;margin-right: 8px;}
+.content .Redemption .Redemption_nav li:nth-child(1) a .Redemption_font p span {width: 110px;display: inline-block;}
+.content .Redemption .exchangeList h3 {color: #F07A41;font-size: 16px;font-weight: bold;margin-top: 20px;margin-bottom: 10px;}
+.content .Redemption .exchangeList h3 span.fr {width: 300px;text-align: center;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_left {width: 880px;border: 1px solid #F8F8F8;float: left;
+    margin-bottom: 0;height: 306px;overflow: hidden;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_left li {float: left;width: 25%;
+    border-right: 1px solid #F8F8F8;border-bottom: 1px solid #F8F8F8;box-sizing: border-box;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_left li .xpsd {display: block;text-align: center;
+    padding: 15px 25px;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_left li .xpsd img {display: inline-block;height: 160px;
+    width: 160px;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_left li .xpsd span {display: block;color: #ED1A2E;
+    font-size: 18px;font-weight: bold;margin: 10px 0;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_left li .xpsd p {font-size: 12px;color: #414141;
+    height: 40px;line-height: 20px;text-align: center;text-overflow: ellipsis;overflow: hidden;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_left li .xpsd a {display: block;text-align: center;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_left li .xpsd a button {color: #fff;
+    border: 0px solid #F23D3D;background: none;width: 90px;font-size: 16px;padding: 5px 0;border-radius: 19px;
+    background: #F07A41;cursor: pointer;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_right {float: right;margin-bottom: 0;width: 300px;
+    height: 306px;overflow: hidden;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_right li {margin-bottom: 6px;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_right li a {display: block;}
+.content .Redemption .exchangeList .exchangeList_wrap .exchangeList_right li a img {height: 150px;width: 300px;}
+.content .Redemption .RotList h3 {color: #F07A41;font-size: 16px;font-weight: bold;margin-top: 20px;margin-bottom: 10px;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop {float: left;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap {border: 1px solid #F8F8F8;display: block;
+    /*background: url(../images/sd4.png) no-repeat 0 0;*/background-size: 100% 100%;width: 645px;height: 432px;
+    text-decoration: none;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap .rots_a {
+    display: -webkit-box;display: -moz-box;display: -webkit-flex;display: -moz-flex;display: -ms-flexbox;display: flex;
+    align-items: center;justify-content: center;height: 100%;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap .rots_a img {width: 260px;height: 260px;margin: 0 25px;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap .rots_a .rots_a_font {width: 200px;margin: 0 25px;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap .rots_a .rots_a_font p {margin-bottom: 20px;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap .rots_a .rots_a_font p.title {color: #A7A6A6;
+    font-size: 12px;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap .rots_a .rots_a_font p.money {color: #FF0303;
+    font-size: 26px;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap .rots_a .rots_a_font p.vip {font-size: 14px;
+    color: #414141;}
+.content .Redemption .RotList .exchangeList_wrap .rotshoop .rot_wrap .rots_a .rots_a_font a {display: block;}
+.exchangeList_wrap .rotshoop .rot_wrap .rots_a .rots_a_font a button {color: #fff;border: 0px solid #F23D3D;
+    width: 100%;font-size: 14px;padding: 5px 0;width: 90px;border-radius: 18px;background: #F07A41;cursor: pointer;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_left {width: 237px;height: 432px;border: 1px solid #F8F8F8;
+    border-left: 0;float: left;margin-bottom: 0;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_left li {width: 100%;border-bottom: 1px solid #F8F8F8;
+    box-sizing: border-box;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_left li:last-child{border-bottom: 0;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_left li .rot_c {display: block;text-align: center;
+    padding: 15px 25px;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_left li .rot_c img {display: inline-block;height: 68px;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_left li .rot_c span {display: block;color: #ED1A2E;
+    font-size: 18px;font-weight: bold;margin: 10px 0;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_left li .rot_c p {font-size: 12px;color: #414141;height: 40px;
+    line-height: 20px;text-align: center;text-overflow: ellipsis;overflow: hidden;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_left li .rot_c a button {color: #fff;border: 0px solid #F23D3D;
+    width: 90px;font-size: 16px;padding: 5px 0;background: #F07A41;border-radius: 19px;cursor: pointer;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_right {float: right;margin-bottom: 0;width: 300px;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_right li:last-child {margin-bottom: 0;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_right li a.nh {height: 300px;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_right li a.nh img{height: 300px;width: 300px;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_right li a {display: block;text-align: center;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_right li .cz img{height: 70px;}
+.content .Redemption .RotList .exchangeList_wrap .exchangeList_right li a button {color: #fff;border: 0px solid #F23D3D;
+    background: #F07A41;width: 90px;font-size: 16px;padding: 5px 0;margin: 17px 0;border-radius: 19px;cursor: pointer;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity:last-child{padding-bottom: 40px;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity h3 {color: #F07A41;font-size: 16px;font-weight: bold;margin-top: 20px;
+    margin-bottom: 10px;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap {padding-bottom: 10px;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left {width: 1200px;margin-bottom: 0;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left li {width: 20%;float: left;
+    border: 1px solid #F8F8F8;box-sizing: border-box;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left li:first-child a {padding: 0;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left li a {display: block;text-align: center;
+    padding: 23px 18px;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left li:first-child a img {width: 100%;height: 334px;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left li a img {display: inline-block;width: 200px;
+    height: 200px;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left li a span {display: block;text-align: left;
+    color: #CACACA;font-size: 14px;margin: 15px 0;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left li a span b {color: #ED1A2E;font-size: 18px;
+    font-weight: bold;margin-right: 5px;}
+.content .Redemption .PreferredCommodity_wrap .PreferredCommodity .exchangeList_wrap .exchangeList_left li a p {font-size: 12px;color: #414141;
+    height: 40px;line-height: 20px;text-align: left;text-overflow: ellipsis;overflow: hidden;margin-bottom: 0;}
+.rightInfo {position: fixed;top: 250px;right: 100px;width: 60px;z-index: 5;}
+.rightInfo ul {background: #F2F2F2;padding-bottom: 10px;padding-top: 10px;margin-bottom: 0;}
+.rightInfo ul li a {display: block;color: #333;text-align: center;position: relative;}
+.rightInfo ul li a i {font-size: 30px;}
+.rightInfo ul li a p {font-size: 12px;color: #333;padding: 5px 0 0 0;margin: 10px 0;}
