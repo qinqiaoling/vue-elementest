@@ -20,7 +20,7 @@ axios.defaults.headers = {
 }
 // var configh='';
 //http request 添加请求拦截器
-var loadinginstace
+var loadinginstace  //定时器
 axios.interceptors.request.use(
 	config => {
 		// 在发送请求之前做些什么

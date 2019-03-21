@@ -43,7 +43,7 @@
 			</div>
 		  	<div slot="footer" class="dialog-footer">
 		    	<!-- <el-button @click="dialogFormVisible_ck = false">通 过</el-button> -->
-		    	<el-button type="primary" @click="dialogFormVisible_ck = false">关 闭</el-button>
+		    	<el-button @click="dialogFormVisible_ck = false">关 闭</el-button>
 		  	</div>
 		</el-dialog>
 	</div>

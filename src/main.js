@@ -36,7 +36,9 @@ Vue.prototype.GLOBAL=goble_;//定义全局变量
 Vue.prototype.FileSaver=FileSaver;//定义全局变量----导出excel表格
 Vue.prototype.XLSX=XLSX;//定义全局变量----导出excel表格
 
+let loadingInstance_a //定义loading定时器
 router.beforeEach(function (to, from, next) {
+    loadingInstance_a = ElementUI.Loading.service({ fullscreen: true }) //路由进入之前开启全屏遮罩层
     if(to.matched.some( m => m.meta.auth)) {// 判断该路由是否需要登录权限
         // console.log("先判断是否登录");
         sessionStorage.setItem('namepath',to.name);
@@ -66,7 +68,12 @@ router.beforeEach(function (to, from, next) {
         next('/login');
     }
 });
-
+router.afterEach(route => {
+    //键入路由1秒之后关闭遮罩层
+    setTimeout(() => {
+        loadingInstance_a.close();
+    }, 1000);
+});
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

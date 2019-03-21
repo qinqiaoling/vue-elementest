@@ -19,7 +19,7 @@
 		                </el-input>
 		            </template>
 		        </el-table-column>
-		        <el-table-column label="操作">
+		        <el-table-column label="操作" width="160px" fixed="right">
 		            <template slot-scope="scope">
 		                <el-button type="primary" icon="el-icon-edit" size="medium" @click.native.prevent="edits(scope.$index, scope.row,dataarraytable)"></el-button>
 		                <el-button type="primary" icon="el-icon-delete" size="medium" @click.native.prevent="removes(scope.$index, scope.row,dataarraytable)"></el-button>

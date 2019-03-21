@@ -12,8 +12,8 @@
 				</el-form>
 			</div>
 		  	<div slot="footer" class="dialog-footer">
-		    	<el-button @click="dialogformchangevisible_true('changesetform')">设 置</el-button>
-		    	<el-button type="primary" @click="dialogformsetvisible = false">取 消</el-button>
+		    	<el-button type="primary" @click="dialogformchangevisible_true('changesetform')">设 置</el-button>
+		    	<el-button @click="dialogformsetvisible = false">取 消</el-button>
 		  	</div>
 		</el-dialog>
 	</div>

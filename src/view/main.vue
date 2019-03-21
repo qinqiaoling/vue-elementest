@@ -1,12 +1,13 @@
 <template>
 	<div class="main_wrap">
 		<el-container>
-			<el-aside width="200px">
-				<main-aside></main-aside>
+			<el-aside :width="aside_width">
+				<main-aside ref="main_aside_c"></main-aside>
 			</el-aside>
 			<el-container>
 				<el-header>
 					<div class="log-out">
+						<span @click="menu()" class="menu"><i :class="status==0?'el-icon-more':'el-icon-more-outline'"></i></span>
 						<span @click="loginout()" class="loginout"><i class="el-icon-setting"></i>退出登录</span>
 					</div>
 				</el-header>
@@ -25,7 +26,8 @@
 		name : "Main",
 		data () {
 			return {
-
+				aside_width:'200px',
+				status:0,
 			}
 		},
 		components:{
@@ -53,6 +55,22 @@
 		            	message: '已取消退出登录'
 		          	});
 		        });
+	    	},
+	    	menu(){
+	    		if(this.status==0){
+	    			//menu  收起
+	    			this.status=1
+	    			this.aside_width='64px'
+	    			this.$refs.main_aside_c.ishow=false
+	    			this.$refs.main_aside_c.isCollapse=true
+	    		}else{
+	    			//menu  展开
+					this.status=0
+					this.aside_width='200px'
+					this.$refs.main_aside_c.ishow=true
+					this.$refs.main_aside_c.isCollapse=false
+	    		}
+	    		console.log(this.status,this.aside_width)
 	    	}
 	    },
 	    watch:{
@@ -94,6 +112,11 @@
 		}
 		.log-out{
 			text-align: right;
+			.menu{
+				float: left;
+				cursor: pointer;
+				font-size: 30px;
+			}
 			.loginout{
 				cursor: pointer;
 			}

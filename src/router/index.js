@@ -10,6 +10,19 @@ import ExamineEreview from '@/view/examinee-review/examinee-review'//考生审�
 import InterviewManagement from '@/view/interview-management/interview-management'//考生审核
 import StatisticalResult from '@/view/statistical-result/statistical-result'//考生审核
 import TreeTable from '@/view/tree-table/tree-table'//树形表格
+import DomeSeting from '@/view/domeseting/domeseting_w'//DomeSeting
+//DomeSeting 例子
+import Timeline from '@/view/domeseting/timeline/timeline'// timeline 时间轴
+import Collapse from '@/view/domeseting/collapse/collapse'// collapse 折叠面板
+import Carousel from '@/view/domeseting/carousel/carousel'// carousel 走马灯 轮播
+import Card from '@/view/domeseting/card/card'// card 卡片化
+import Popover from '@/view/domeseting/popover/popover'// card 弹框框
+import Tooltip from '@/view/domeseting/tooltip/tooltip'// tooltip 文字提示
+
+import Steps from '@/view/domeseting/steps/steps'// steps 步骤条
+import Dropdown from '@/view/domeseting/dropdown/dropdown'// dropdown 下拉菜单
+import Breadcrumb from '@/view/domeseting/breadcrumb/breadcrumb'// breadcrumb 面包屑
+import Tabs from '@/view/domeseting/tabs/tabs'// tabs 标签页
 
 Vue.use(Router)
 
@@ -63,6 +76,72 @@ export default new Router({
 					name: 'TreeTable',
 					meta:{auth:true,keepAlive: false},
 					component: TreeTable
+				},
+				{
+					path: '/main/domeseting',
+					name: 'DomeSeting',
+					meta:{auth:true,keepAlive: false},
+					component: DomeSeting,
+				},
+				{
+					path: '/main/domeseting/timeline',
+					name: 'Timeline',
+					meta:{auth:true,keepAlive: false},
+					component: Timeline,
+				},
+				{
+					path: '/main/domeseting/collapse',
+					name: 'Collapse',
+					meta:{auth:true,keepAlive: false},
+					component: Collapse,
+				},
+				{
+					path: '/main/domeseting/carousel',
+					name: 'Carousel',
+					meta:{auth:true,keepAlive: false},
+					component: Carousel,
+				},
+				{
+					path: '/main/domeseting/card',
+					name: 'Card',
+					meta:{auth:true,keepAlive: false},
+					component: Card,
+				},
+				{
+					path: '/main/domeseting/popover',
+					name: 'Popover',
+					meta:{auth:true,keepAlive: false},
+					component: Popover,
+				},
+				{
+					path: '/main/domeseting/tooltip',
+					name: 'Tooltip',
+					meta:{auth:true,keepAlive: false},
+					component: Tooltip,
+				},
+				{
+					path: '/main/domeseting/steps',
+					name: 'Steps',
+					meta:{auth:true,keepAlive: false},
+					component: Steps,
+				},
+				{
+					path: '/main/domeseting/dropdown',
+					name: 'Dropdown',
+					meta:{auth:true,keepAlive: false},
+					component: Dropdown,
+				},
+				{
+					path: '/main/domeseting/breadcrumb',
+					name: 'Breadcrumb',
+					meta:{auth:true,keepAlive: false},
+					component: Breadcrumb,
+				},
+				{
+					path: '/main/domeseting/tabs',
+					name: 'Tabs',
+					meta:{auth:true,keepAlive: false},
+					component: Tabs,
 				},
 			]
 		},

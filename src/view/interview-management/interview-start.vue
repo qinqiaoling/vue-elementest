@@ -64,8 +64,8 @@
 				</el-table>
 			</div>
 		  	<div slot="footer" class="dialog-footer">
-		    	<el-button @click="dialogformchangevisible_true()">提 交</el-button>
-		    	<el-button type="primary" @click="dialogformmspfvisible = false">取 消</el-button>
+		    	<el-button type="primary" @click="dialogformchangevisible_true()">提 交</el-button>
+		    	<el-button @click="dialogformmspfvisible = false">取 消</el-button>
 		  	</div>
 		</el-dialog>
 	</div>

@@ -42,8 +42,8 @@
 				</el-table>
 			</div>
 		  	<div slot="footer" class="dialog-footer">
-		    	<el-button @click="dialogFormVisible_sh_pass()">通 过</el-button>
-		    	<el-button type="primary" @click="dialogFormVisible_sh = false">拒 绝</el-button>
+		    	<el-button type="primary" @click="dialogFormVisible_sh_pass()">通 过</el-button>
+		    	<el-button @click="dialogFormVisible_sh = false">拒 绝</el-button>
 		  	</div>
 		</el-dialog>
 	</div>
