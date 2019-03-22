@@ -18,11 +18,14 @@ import Carousel from '@/view/domeseting/carousel/carousel'// carousel 走马灯 
 import Card from '@/view/domeseting/card/card'// card 卡片化
 import Popover from '@/view/domeseting/popover/popover'// card 弹框框
 import Tooltip from '@/view/domeseting/tooltip/tooltip'// tooltip 文字提示
-
 import Steps from '@/view/domeseting/steps/steps'// steps 步骤条
 import Dropdown from '@/view/domeseting/dropdown/dropdown'// dropdown 下拉菜单
 import Breadcrumb from '@/view/domeseting/breadcrumb/breadcrumb'// breadcrumb 面包屑
 import Tabs from '@/view/domeseting/tabs/tabs'// tabs 标签页
+import badgeTagProgress from '@/view/domeseting/badge-add-tag-add-progress/badge-add-tag-add-progress'//badge-add-tag-add-progress 标记和标签和进度条
+
+
+
 
 Vue.use(Router)
 
@@ -142,6 +145,12 @@ export default new Router({
 					name: 'Tabs',
 					meta:{auth:true,keepAlive: false},
 					component: Tabs,
+				},
+				{
+					path: '/main/domeseting/badgeTagProgress',
+					name: 'badgeTagProgress',
+					meta:{auth:true,keepAlive: false},
+					component: badgeTagProgress,
 				},
 			]
 		},

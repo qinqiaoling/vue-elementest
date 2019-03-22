@@ -107,6 +107,12 @@
 			          	nextpath:'/main/domeseting/tabs',
 			        },
 			        {
+			          	id: 11,
+			          	label: 'badgeTagProgress 标记和标签和进度条 11',
+			          	className:'NO1',
+			          	nextpath:'/main/domeseting/badgeTagProgress',
+			        },
+			        {
 			          	id: 1111111111,
 			          	label: '一级菜单 1-1',
 			          	className:'NO1',
