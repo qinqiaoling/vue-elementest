@@ -113,6 +113,24 @@
 			          	nextpath:'/main/domeseting/badgeTagProgress',
 			        },
 			        {
+			          	id: 12,
+			          	label: 'rate-colorpicker 评分 12',
+			          	className:'NO1',
+			          	nextpath:'/main/domeseting/rate-colorpicker',
+			        },
+			        {
+			          	id: 13,
+			          	label: 'transfer 穿梭框 13',
+			          	className:'NO1',
+			          	nextpath:'/main/domeseting/transfer',
+			        },
+			        {
+			          	id: 14,
+			          	label: 'upload 穿梭框 14',
+			          	className:'NO1',
+			          	nextpath:'/main/domeseting/upload',
+			        },
+			        {
 			          	id: 1111111111,
 			          	label: '一级菜单 1-1',
 			          	className:'NO1',

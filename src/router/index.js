@@ -23,8 +23,9 @@ import Dropdown from '@/view/domeseting/dropdown/dropdown'// dropdown 下拉菜�
 import Breadcrumb from '@/view/domeseting/breadcrumb/breadcrumb'// breadcrumb 面包屑
 import Tabs from '@/view/domeseting/tabs/tabs'// tabs 标签页
 import badgeTagProgress from '@/view/domeseting/badge-add-tag-add-progress/badge-add-tag-add-progress'//badge-add-tag-add-progress 标记和标签和进度条
-
-
+import RateColorpicker from '@/view/domeseting/rate-add-colorpicker/rate-add-colorpicker'//rate 评分  colorpicker 颜色选择器
+import Transfer from '@/view/domeseting/transfer/transfer'//transfer 穿梭框
+import Upload from '@/view/domeseting/upload/upload'//upload 上传
 
 
 Vue.use(Router)
@@ -151,6 +152,24 @@ export default new Router({
 					name: 'badgeTagProgress',
 					meta:{auth:true,keepAlive: false},
 					component: badgeTagProgress,
+				},
+				{
+					path: '/main/domeseting/rate-colorpicker',
+					name: 'RateColorpicker',
+					meta:{auth:true,keepAlive: false},
+					component: RateColorpicker,
+				},
+				{
+					path: '/main/domeseting/transfer',
+					name: 'Transfer',
+					meta:{auth:true,keepAlive: false},
+					component: Transfer,
+				},
+				{
+					path: '/main/domeseting/upload',
+					name: 'Upload',
+					meta:{auth:true,keepAlive: false},
+					component: Upload,
 				},
 			]
 		},
