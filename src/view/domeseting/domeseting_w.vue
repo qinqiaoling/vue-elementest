@@ -126,7 +126,7 @@
 			        },
 			        {
 			          	id: 14,
-			          	label: 'upload 穿梭框 14',
+			          	label: 'upload 上传 14',
 			          	className:'NO1',
 			          	nextpath:'/main/domeseting/upload',
 			        },
