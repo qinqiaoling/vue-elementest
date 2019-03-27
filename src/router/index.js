@@ -26,6 +26,8 @@ import badgeTagProgress from '@/view/domeseting/badge-add-tag-add-progress/badge
 import RateColorpicker from '@/view/domeseting/rate-add-colorpicker/rate-add-colorpicker'//rate 评分  colorpicker 颜色选择器
 import Transfer from '@/view/domeseting/transfer/transfer'//transfer 穿梭框
 import Upload from '@/view/domeseting/upload/upload'//upload 上传
+import DateTimePicker from '@/view/domeseting/datetimepicker/datetimepicker'//datetimepicker 日期时间选择器
+import SliderSwitchInputnumber from '@/view/domeseting/slider-add-switch-add-inputnumber/slider-add-switch-add-inputnumber'//slider 滑块 switch  开关 inputnumber 计数器
 
 
 Vue.use(Router)
@@ -170,6 +172,18 @@ export default new Router({
 					name: 'Upload',
 					meta:{auth:true,keepAlive: false},
 					component: Upload,
+				},
+				{
+					path: '/main/domeseting/datetimepicker',
+					name: 'DateTimePicker',
+					meta:{auth:true,keepAlive: false},
+					component: DateTimePicker,
+				},
+				{
+					path: '/main/domeseting/sliderswitchinputnumber',
+					name: 'SliderSwitchInputnumber',
+					meta:{auth:true,keepAlive: false},
+					component: SliderSwitchInputnumber,
 				},
 			]
 		},

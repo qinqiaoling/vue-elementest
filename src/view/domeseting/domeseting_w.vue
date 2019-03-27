@@ -131,6 +131,18 @@
 			          	nextpath:'/main/domeseting/upload',
 			        },
 			        {
+			          	id: 15,
+			          	label: 'datetimepicker 日期时间选择器 15',
+			          	className:'NO1',
+			          	nextpath:'/main/domeseting/datetimepicker',
+			        },
+			        {
+			          	id: 16,
+			          	label: 'sliderswitchinputnumber 滑块-开关-计数器 16',
+			          	className:'NO1',
+			          	nextpath:'/main/domeseting/sliderswitchinputnumber',
+			        },
+			        {
 			          	id: 1111111111,
 			          	label: '一级菜单 1-1',
 			          	className:'NO1',
