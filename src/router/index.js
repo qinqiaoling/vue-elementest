@@ -28,7 +28,7 @@ import Transfer from '@/view/domeseting/transfer/transfer'//transfer 穿梭框
 import Upload from '@/view/domeseting/upload/upload'//upload 上传
 import DateTimePicker from '@/view/domeseting/datetimepicker/datetimepicker'//datetimepicker 日期时间选择器
 import SliderSwitchInputnumber from '@/view/domeseting/slider-add-switch-add-inputnumber/slider-add-switch-add-inputnumber'//slider 滑块 switch  开关 inputnumber 计数器
-
+import SelectCascader from '@/view/domeseting/select-add-cascader/select-add-cascader'//select 选择器 cascader 级联选择器
 
 Vue.use(Router)
 
@@ -184,6 +184,12 @@ export default new Router({
 					name: 'SliderSwitchInputnumber',
 					meta:{auth:true,keepAlive: false},
 					component: SliderSwitchInputnumber,
+				},
+				{
+					path: '/main/domeseting/select-cascader',
+					name: 'SelectCascader',
+					meta:{auth:true,keepAlive: false},
+					component: SelectCascader,
 				},
 			]
 		},

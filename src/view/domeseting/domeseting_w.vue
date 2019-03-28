@@ -143,6 +143,12 @@
 			          	nextpath:'/main/domeseting/sliderswitchinputnumber',
 			        },
 			        {
+			          	id: 17,
+			          	label: 'select-cascader 选择器-级联选择器 17',
+			          	className:'NO1',
+			          	nextpath:'/main/domeseting/select-cascader',
+			        },
+			        {
 			          	id: 1111111111,
 			          	label: '一级菜单 1-1',
 			          	className:'NO1',
