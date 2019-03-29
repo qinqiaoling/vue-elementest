@@ -1,4 +1,4 @@
-# vuedemo
+# vue + ElementUi demo
 
 > A Vue.js project
 
