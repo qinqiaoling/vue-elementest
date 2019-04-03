@@ -4,7 +4,12 @@
 			<el-button type="primary" @click="goback()" icon="el-icon-back">返回上一级</el-button>
 		</div>
 		<div class="carouseldome">
-		  	<div class="radio">卡片阴影：
+			<div class="block">
+				<el-input v-model="focusinput">
+					<el-button slot="append" icon="el-icon-search" @click="focusinputevent()"></el-button>
+				</el-input>
+			</div>
+		  	<div class="radio">卡片阴影：{{author}}
 			    <el-radio-group v-model="cardshadow">
 			      	<el-radio label="hover">hover 才在</el-radio>
 			      	<el-radio label="always">always 一直在</el-radio>
@@ -35,8 +40,15 @@
 			return {
 				cardshadow:'hover',
 				cardimg:'../../../static/images/no_img.jpg',
-				currentDate:new Date()
+				currentDate:new Date(),
+				focusinput:null,
 			}
+		},
+		computed:{
+			author(){
+				console.log(this.$store.state)
+				return this.$store.state.author
+			},
 		},
 		mounted(){
 
@@ -44,6 +56,10 @@
 		methods:{
 			goback(){
 				this.$router.push('/main/domeseting');
+			},
+			focusinputevent(){
+				console.log(this.focusinput)
+				this.$store.commit('increment', this.focusinput);
 			},
 		},
 		watch:{

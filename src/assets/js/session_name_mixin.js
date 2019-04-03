@@ -4,9 +4,8 @@
  */
 function session_n(){
 	let get_watchstorage=sessionStorage.getItem('watchStorage');
-	// let get_namepath=sessionStorage.getItem('namepath');
 	let get_namepath=location.pathname;//获取url端口号后面的页面的路径，例如：/jsref/prop-loc-pathname.html
-	if(get_namepath=='/Login'||get_namepath=='/login'){
+	if(get_namepath=='/login'){
 		sessionStorage.removeItem('watchStorage');
 	}else{
 		if(get_watchstorage==null||get_watchstorage==undefined||get_watchstorage==""){

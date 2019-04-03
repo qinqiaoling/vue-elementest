@@ -70,6 +70,11 @@
 					if (valid) {
 						alert('submit!');
 						this.GLOBAL.resetSetItem('watchStorage', JSON.stringify(this.ruleForm2));
+						this.$store.commit('changeadmin',{
+							username: this.ruleForm2.username,
+							password: this.ruleForm2.password,
+							iphone: this.$store.state.admin.iphone
+						});
 						this.$router.push('/main/examinee-review');
 					} else {
 						alert('error submit!!');

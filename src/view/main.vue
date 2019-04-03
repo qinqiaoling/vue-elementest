@@ -48,6 +48,7 @@
 		            	message: '退出登录成功!'
 		          	});
 		          	sessionStorage.clear();
+		          	this.$store.commit('changeadmin', null);
 	    			this.$router.push('/login');
 		        }).catch(() => {
 		          	this.$message({

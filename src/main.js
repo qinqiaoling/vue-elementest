@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'//使用store
 import axios from 'axios'/*引入资源请求插件*/
 
 import ElementUI from 'element-ui'
@@ -79,6 +80,7 @@ new Vue({
   el: '#app',
   router,
   axios,
+  store,
   components: { App },
   template: '<App/>'
 })

@@ -39,7 +39,7 @@
 		data () {
 			return {
 				user_img:'../../static/images/no_img.jpg',
-				user_name:JSON.parse(sessionStorage.getItem('watchStorage')).username,
+				// user_name:this.$store.state.username,
 				user_Administrator:'系统管理员',
 				change_dialog:false,
 				openeds:['1'],
@@ -80,12 +80,16 @@
 			ChnageUserDialog
 	    },
 	    computed:{
-	    	
+	    	user_name(){
+	    		return this.$store.state.admin.username
+	    	}
 	    },
 	    created() {
-			window.addEventListener('setItem', ()=> {
-				this.user_name = JSON.parse(sessionStorage.getItem('watchStorage')).username;
-			})
+			// window.addEventListener('setItem', ()=> {
+			// 	this.user_name = JSON.parse(sessionStorage.getItem('store')).username;
+			// 	this.user_name = this.$store.state.username
+			// 	console.log(this.$store.state.admin.username)
+			// })
 		},
 	    mounted:function() { 
 	    }, 

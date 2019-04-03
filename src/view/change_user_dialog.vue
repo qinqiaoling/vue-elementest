@@ -72,7 +72,7 @@
 	      	init () {
 		        this.dialogformchangevisible = true
 		        this.$nextTick(() => {
-		          this.$refs['changeuserform'].resetFields()
+		          	this.$refs['changeuserform'].resetFields()
 		        })
 	      	},
 	    	dialogformchangevisible_true(formName_a){
@@ -86,6 +86,11 @@
 							'iphone':this.changeuserform.iphone
 						};
 						this.GLOBAL.resetSetItem('watchStorage', JSON.stringify(changeuserform_a));
+						this.$store.commit('changeadmin', {
+							username: this.changeuserform.change_username,
+							password: this.$store.state.admin.password,
+							iphone: this.changeuserform.iphone
+						});
 						this.dialogformchangevisible=false
 					} else {
 						alert('error submit!!');
