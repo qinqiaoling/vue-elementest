@@ -11,6 +11,7 @@ import InterviewManagement from '@/view/interview-management/interview-managemen
 import StatisticalResult from '@/view/statistical-result/statistical-result'//考生审核
 import TreeTable from '@/view/tree-table/tree-table'//树形表格
 import DomeSeting from '@/view/domeseting/domeseting_w'//DomeSeting
+import EchartsDome from '@/view/echartsdome/echartsdome'//echartsdome
 //DomeSeting 例子
 import Timeline from '@/view/domeseting/timeline/timeline'// timeline 时间轴
 import Collapse from '@/view/domeseting/collapse/collapse'// collapse 折叠面板
@@ -88,6 +89,12 @@ export default new Router({
 					name: 'DomeSeting',
 					meta:{auth:true,keepAlive: false},
 					component: DomeSeting,
+				},
+				{
+					path: '/main/echarts',
+					name: 'EchartsDome',
+					meta:{auth:true,keepAlive: false},
+					component: EchartsDome,
 				},
 				{
 					path: '/main/domeseting/timeline',

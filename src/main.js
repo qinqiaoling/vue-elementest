@@ -9,14 +9,19 @@ import axios from 'axios'/*引入资源请求插件*/
 import ElementUI from 'element-ui'
 // import ElementUI from '@/assets/js/element.js'//引用element.js
 import '../node_modules/element-ui/lib/theme-chalk/index.css'
+
 //导出excel插件
 import FileSaver from 'file-saver'
 import XLSX from 'xlsx'
 
+//引入JQuery
 import $ from 'jquery'
+
 import goble_ from '@/assets/js/public.js'//定义公共的js
 import '@/assets/css/style.css'
 import {server} from './api/http'//封装axios方法
+
+import echarts from 'echarts' //引入echarts
 
 //定义公共的js判断当前路径是否为登录页面，不为登录页面则判断watchStorage值是否为空，为空则返回登录页面，
 //作用于在浏览器没有登录的情况下是不能访问页面的
@@ -36,6 +41,8 @@ Vue.prototype.GLOBAL=goble_;//定义全局变量
 
 Vue.prototype.FileSaver=FileSaver;//定义全局变量----导出excel表格
 Vue.prototype.XLSX=XLSX;//定义全局变量----导出excel表格
+
+Vue.prototype.$echarts = echarts //引入echarts组件
 
 let loadingInstance_a //定义loading定时器
 router.beforeEach(function (to, from, next) {

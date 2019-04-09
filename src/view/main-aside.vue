@@ -72,6 +72,12 @@
 						text:'dome设置',
 						iconclass:'el-icon-setting',
 						urlpath:'/main/domeseting',
+					},
+					{
+						indexs:'6',
+						text:'echarts图表',
+						iconclass:'el-icon-picture',
+						urlpath:'/main/echarts',
 					}
 				]
 			}
